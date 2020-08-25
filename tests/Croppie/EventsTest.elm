@@ -2,11 +2,8 @@ module Croppie.EventsTest exposing (..)
 
 import Croppie
 import Croppie.Events as Events
-import Croppie.Internal
 import Expect exposing (FloatingPointTolerance(..))
-import Fuzz exposing (Fuzzer, bool, int , string)
-import Html
-import Html.Attributes exposing (class, src)
+import Fuzz exposing (Fuzzer, int , string)
 import Json.Encode as Encode
 import Test.Html.Event as Event
 import Test.Html.Query as Query

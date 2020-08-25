@@ -1,3 +1,4 @@
+![build](https://github.com/hallelujahdrive/elm-croppie/workflows/build/badge.svg)
 # Croppie for Elm
 
 This is a wrapper library of [Croppie](https://github.com/foliotek/croppie/)
@@ -32,7 +33,7 @@ npm install elm-croppie@1.0.0
 ```
 
 Then in your Javascript add a following import:
-```
+```javascript
 require("elm-croppie");
 ```
 
