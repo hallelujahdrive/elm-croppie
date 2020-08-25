@@ -1005,21 +1005,27 @@ view =
 usageCodeElm =
     """import Croppie
 
+port croppie : Croppie.Data -> Cmd msg
+
 view =
     Croppie.croppie opts [ id "item" ]
 
 update msg model =
     ( model
-    , Croppie.function "item" args
+    , croppie <|
+        Croppie.bind "item" bindOpts
     )
 """
 
 
 usageCodeJs =
-    """const elm = Elm.Main.init({
+    """const app = Elm.Main.init({
     node: document.getElementById("elm"));
 });
-ElmCroppie.init(elm);
+
+app.ports.croppie.subscribe((data) => {
+    ElmCroppie.port(data);
+});
 """
 
 

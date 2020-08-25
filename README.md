@@ -45,7 +45,7 @@ You can initialize ElmCroppie with the following elm code:
 import Croppie
 import Croppie.BindOptions exposing (..)
 
-port croppie : Croppie.Data -> msg
+port croppie : Croppie.Data -> Cmd msg
 
 view =
     Croppie.croppie [] [ id "item" ]
