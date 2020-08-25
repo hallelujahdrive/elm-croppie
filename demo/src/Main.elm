@@ -174,6 +174,7 @@ body model =
     , documentation
     , demos model
     , importantNotes
+    , browsers
     , who
     , footer
     , githubCorner
@@ -926,6 +927,31 @@ importantNotes =
         ]
 
 
+browsers : Html Msg
+browsers =
+    Html.section [ class "browsers" ]
+        [ Html.a
+            [ id "browsers"
+            , name "browsers"
+            ]
+            []
+        , Html.div [ class "section-header" ] [ Html.h2 [] [ text "Browser Support" ] ]
+        , Html.div [ class "container" ]
+            [ Html.p [] [ text "Croppie for Elm is supported in the following browsers:" ]
+            , Html.ul []
+                [ Html.li [] [ text "Firefox 63+" ]
+                , Html.li [] [ text "Chrome 54+" ]
+                , Html.li [] [ text "Edge 79+" ]
+                , Html.li [] [ text "Safari 10.1+" ]
+                , Html.li [] [ text "Opera 41+" ]
+                , Html.li [] [ text "iOS Safari 10.3+" ]
+                , Html.li [] [ text "Chrome for Android" ]
+                , Html.li [] [ text "Firefox for Android" ]
+                ]
+            ]
+        ]
+
+
 who : Html Msg
 who =
     Html.section [ class "who" ]
@@ -1005,21 +1031,27 @@ view =
 usageCodeElm =
     """import Croppie
 
+port croppie : Croppie.Data -> Cmd msg
+
 view =
     Croppie.croppie opts [ id "item" ]
 
 update msg model =
     ( model
-    , Croppie.function "item" args
+    , croppie <|
+        Croppie.bind "item" bindOpts
     )
 """
 
 
 usageCodeJs =
-    """const elm = Elm.Main.init({
+    """const app = Elm.Main.init({
     node: document.getElementById("elm"));
 });
-ElmCroppie.init(elm);
+
+app.ports.croppie.subscribe((data) => {
+    ElmCroppie.port(data);
+});
 """
 
 

@@ -45,7 +45,7 @@ You can initialize ElmCroppie with the following elm code:
 import Croppie
 import Croppie.BindOptions exposing (..)
 
-port croppie : Croppie.Data -> msg
+port croppie : Croppie.Data -> Cmd msg
 
 view =
     Croppie.croppie [] [ id "item" ]
@@ -66,7 +66,7 @@ app.ports.croppie.subscribe((data) => {
 });
 ```
 
-## Importtant Notes
+## Important Notes
 Croppie uses `canvas.drawImage(...)` to manipulate images. Thus, images must obey the CORS policy. More info can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image).
 
 ## Who

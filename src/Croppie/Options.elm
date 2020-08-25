@@ -164,7 +164,7 @@ showZoomer showZoomer_ =
 
 {-| The inner container of the croppie, The visible part of the image
 
-Default: `{ width = 100, height = 100, type_ : Square }`
+Default: `{ width = 100, height = 100, type_ = Square }`
 -}
 viewport :
     { width : Int
