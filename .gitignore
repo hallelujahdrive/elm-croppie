@@ -1,0 +1,7 @@
+elm-stuff
+node_modules
+dist
+docs.json
+demo/demo.js
+demo/elm-croppie.js
+demo/elm-croppie.css
