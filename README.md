@@ -6,6 +6,16 @@ This is a wrapper library of [Croppie](https://github.com/foliotek/croppie/)
 _Croppie is a fast, easy to use image cropping plugin with tons of configuration options!_
 
 
+## Links
+
+### Demos
+- [Croppie](https://foliotek.github.io/Croppie)
+- [Croppie For Elm](https://hallelujahdrive.github.io/elm-croppie)
+
+### GitHub
+- [foliotek/croppie](https://github.com/foliotek/croppie/)
+- [hallelujahdrive/elm-croppie](https://github.com/hallelujahdrive/elm-croppie)
+
 ## The Basics
 ```elm
 import Croppie
@@ -18,18 +28,18 @@ view =
 ## Installation
 Elm:
 ```
-elm install hallelujahdrive/elm-croppie@1.0.0
+elm install hallelujahdrive/elm-croppie@1.0.1
 ```
 
 Then add the following elements to your page:
 ```html
-<link rel="stylesheet" href="https://unpkg.com/elm-croppie/@1.0.0/dist/elm-croppie.css" />
-<script src="https://unpkg.com/elm-croppie/@1.0.0/dist/elm-croppie.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/elm-croppie/@1.0.1/dist/elm-croppie.css" />
+<script src="https://unpkg.com/elm-croppie/@1.0.1/dist/elm-croppie.js"></script>
 ```
 
 If you use bundler please install the Javascript and CSS assets via npm:
 ```
-npm install elm-croppie@1.0.0
+npm install elm-croppie@1.0.1
 ```
 
 Then in your Javascript add a following import:

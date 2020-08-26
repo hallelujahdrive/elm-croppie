@@ -3,7 +3,7 @@ import Croppie, { CropType, CroppieOptions, ResultOptions } from "croppie";
 export default class ElmCroppie extends HTMLElement {
     static croppies_: Map<String, ElmCroppie> = new Map();
 
-    croppie_: Croppie | null;
+    croppie_: Croppie | undefined;
     options_: CroppieOptions;
     resultOptions_: ResultOptions;
 
@@ -41,7 +41,6 @@ export default class ElmCroppie extends HTMLElement {
 
     constructor () {
         super();
-        this.croppie_ = null;
         this.options_ = new Object;
         this.resultOptions_ = new Object;
     }

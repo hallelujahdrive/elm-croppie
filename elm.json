@@ -3,7 +3,7 @@
     "name": "hallelujahdrive/elm-croppie",
     "summary": "Croppie for Elm",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "exposed-modules": [
         "Croppie",
         "Croppie.BindOptions",
