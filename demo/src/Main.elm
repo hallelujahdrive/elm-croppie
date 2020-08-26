@@ -163,7 +163,7 @@ subscriptions model =
 
 view : Model -> Browser.Document Msg
 view model =
-    { title = ""
+    { title = "Croppie For Elm - The wrapper library of Croppie for Elm"
     , body = body model
     }
 
