@@ -8,25 +8,27 @@ export default class ElmCroppie extends HTMLElement {
     resultOptions_: ResultOptions;
 
     static port (data: any) {
-        const croppie = ElmCroppie.croppies_.get(data.id);
-        if (croppie) {
-            switch (data.method) {
-                case "get":
-                    croppie.get();
-                case "bind":
-                    croppie.bind(data.value);
-                    break;
-                case "result":
-                    croppie.result(data.value);
-                    break;
-                case "rotate":
-                    croppie.rotate(data.value);
-                    break;
-                case "setZoom":
-                    croppie.setZoom(data.value);
-                    break;
+        requestAnimationFrame (() => {
+            const croppie = ElmCroppie.croppies_.get(data.id);
+            if (croppie) {
+                switch (data.method) {
+                    case "get":
+                        croppie.get();
+                    case "bind":
+                        croppie.bind(data.value);
+                        break;
+                    case "result":
+                        croppie.result(data.value);
+                        break;
+                    case "rotate":
+                        croppie.rotate(data.value);
+                        break;
+                    case "setZoom":
+                        croppie.setZoom(data.value);
+                        break;
+                }
             }
-        }
+        });
     }
 
     set options (options: CroppieOptions) {

@@ -23,6 +23,9 @@ port croppie : Croppie.Data -> Cmd msg
 port sweetAlert : String -> Cmd msg
 
 
+version = "1.0.2"
+
+
 main : Program () Model Msg
 main =
     Browser.document
@@ -261,14 +264,14 @@ installation =
                 [ class "language-elm"
                 , style "width" "390px"
                 ]
-                [ Html.code [ class "language-elm" ] [ text "elm install hallelujahdrive/elm-croppie@1.0.1" ]
+                [ Html.code [ class "language-elm" ] [ text <| "elm install hallelujahdrive/elm-croppie@" ++ version ]
                 ]
             , Html.hr [] []
             , Html.p [] [ Html.strong [] [ text "Then add the following elements to your page:" ] ]
             , Html.pre [ class "language-html" ]
                 [ Html.code [ class "language-html" ]
-                    [ text """<link rel="stylesheet" href ="https://unpkg.com/elm-croppie/@1.0.1/dist/elm-croppie.css" />
-<script src="https://unpkg.com/elm-croppie/@1.0.1/dist/elm-croppie.js"></script>""" 
+                    [ text <| """<link rel="stylesheet" href ="https://unpkg.com/elm-croppie@""" ++ version ++ """/dist/elm-croppie.css" />
+<script src="https://unpkg.com/elm-croppie@""" ++ version ++ """/dist/elm-croppie.js"></script>""" 
                     ]
                 ]
             , Html.p [] [ Html.strong [] [ text "If you use bundler please install the Javascript and CSS assets via npm:" ] ]
@@ -276,7 +279,7 @@ installation =
                 [ class "language-js"
                 , style "width" "390px"
                 ]
-                [ Html.code [ class "language-elm" ] [ text "npm install elm-croppie@1.0.1" ]
+                [ Html.code [ class "language-elm" ] [ text <| "npm install elm-croppie@" ++ version ]
                 ]
             , Html.p [] [ Html.strong [] [ text "Then in your Javascript add following import:" ] ]
             , Html.pre [ class "language-js" ]
