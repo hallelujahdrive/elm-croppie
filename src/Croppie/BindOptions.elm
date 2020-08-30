@@ -7,7 +7,7 @@ module Croppie.BindOptions exposing
 
 {-| Options of binding an image.
 
-See [Croppie.bind](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie#bind) for usage.
+See [Croppie.bind](/packages/hallelujahdrive/elm-croppie/latest/Croppie#bind) for usage.
 
 # Bind Options
 @docs url
@@ -45,7 +45,7 @@ zoom zoom_ =
 
 {-|  Custom orientation, applied after exif orientation (if enabled). 
 Only works with enableOrientation option enabled 
-(see [Croppie.Options.enableOrientation](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie-Options#enableOrientation)).
+(see [Croppie.Options.enableOrientation](/packages/hallelujahdrive/elm-croppie/latest/Croppie-Options#enableOrientation)).
 
 Valid options are:
 

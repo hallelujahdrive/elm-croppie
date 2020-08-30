@@ -85,7 +85,7 @@ type alias Data =
 
 {-| Option of Croppie
 
-Learn more in the [Croppie.Options](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie-Options) module.
+Learn more in the [Croppie.Options](/packages/hallelujahdrive/elm-croppie/latest/Croppie-Options) module.
 -}
 type alias Option =
     Internal.Option
@@ -93,7 +93,7 @@ type alias Option =
 
 {-| Option of bind an image
 
-Learn more in the [Croppie.BindOptions](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie-BindOptions) module.
+Learn more in the [Croppie.BindOptions](/packages/hallelujahdrive/elm-croppie/latest/Croppie-BindOptions) module.
 -}
 type alias BindOption =
     Internal.BindOption
@@ -101,7 +101,7 @@ type alias BindOption =
 
 {-| Option of to get the resulting crop of image
 
- Learn more in the [Croppie.ResultOptions](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie-ResultOptions) module.
+ Learn more in the [Croppie.ResultOptions](/packages/hallelujahdrive/elm-croppie/latest/Croppie-ResultOptions) module.
 -}
 type alias ResultOption =
     Internal.ResultOption
@@ -117,7 +117,7 @@ type Result msg
 
 {-| Get the crop points, and the zoom of the image.
 
-The return value can be received with [Croppie.Events.onGet](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie-Events#onGet)
+The return value can be received with [Croppie.Events.onGet](/packages/hallelujahdrive/elm-croppie/latest/Croppie-Events#onGet)
 
 - `id ` id of the target Croppie element
 
@@ -133,7 +133,7 @@ get id =
 
 - `id ` id of the target Croppie element
 - `bindOptions` List of bind options 
-(see [Croppie.BindOptions](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie-BindOptions)).
+(see [Croppie.BindOptions](/packages/hallelujahdrive/elm-croppie/latest/Croppie-BindOptions)).
 
 
 -}
@@ -147,11 +147,11 @@ bind id options =
 
 {-| Get the resulting crop of the image.
 
-The return value can be received with [Croppie.Events.onResult](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie-Events#onResult).
+The return value can be received with [Croppie.Events.onResult](/packages/hallelujahdrive/elm-croppie/latest/Croppie-Events#onResult).
 
 - `id ` id of the target Croppie element
 - `resultOptions` List of result options. 
-See [Croppie.ResultOptions](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie-ResultOptions) for list of options
+See [Croppie.ResultOptions](/packages/hallelujahdrive/elm-croppie/latest/Croppie-ResultOptions) for list of options
 
 -}
 result : String -> List ResultOption -> Data
@@ -164,7 +164,7 @@ result id options =
 
 {-| Rotate the image by a specified degree amount. 
 Only works with `enableOrientation` option enabled 
-(see [Croppie.Options.enableOrientation](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie-Options#enableOrientation)).
+(see [Croppie.Options.enableOrientation](/packages/hallelujahdrive/elm-croppie/latest/Croppie-Options#enableOrientation)).
 
 - `id ` id of the target Croppie element
 - `degrees` rotation angle

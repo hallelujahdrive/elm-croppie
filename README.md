@@ -28,18 +28,18 @@ view =
 ## Installation
 Elm:
 ```
-elm install hallelujahdrive/elm-croppie@1.0.2
+elm install hallelujahdrive/elm-croppie@1.0.3
 ```
 
 Then add the following elements to your page:
 ```html
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/elm-croppie@1.0.2/dist/elm-croppie.css" />
-<script src="https://unpkg.com/elm-croppie@1.0.2/dist/elm-croppie.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/elm-croppie@1.0.3/dist/elm-croppie.css" />
+<script src="https://unpkg.com/elm-croppie@1.0.3/dist/elm-croppie.js"></script>
 ```
 
 If you use bundler please install the Javascript and CSS assets via npm:
 ```
-npm install elm-croppie@1.0.2
+npm install elm-croppie@1.0.3
 ```
 
 Then in your Javascript add a following import:

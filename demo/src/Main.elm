@@ -23,7 +23,7 @@ port croppie : Croppie.Data -> Cmd msg
 port sweetAlert : String -> Cmd msg
 
 
-version = "1.0.2"
+version = "1.0.3"
 
 
 main : Program () Model Msg

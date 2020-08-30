@@ -1,6 +1,6 @@
 {
   "name": "elm-croppie",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Wrapper library of Croppie for Elm",
   "author": "hallelujahdrive",
   "license": "MIT",
@@ -10,14 +10,13 @@
     "dist",
     "types"
   ],
-  "dependencies": {
-    "croppie": "^2.6.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@rollup/plugin-typescript": "^5.0.2",
+    "croppie": "^2.6.5",
     "elm-analyse": "^0.16.5",
     "exif-js": "^2.3.0",
     "rollup-plugin-elm": "^2.0.2",
@@ -30,5 +29,8 @@
   "scripts": {
     "test": "elm-test"
   },
-  "types": "types/elm-croppie.d.ts"
+  "main": "dist/elm-croppie.common.js",
+  "module": "dist/elm-croppie.esm.js",
+  "types": "types/elm-croppie.d.ts",
+  "unpkg": "dist/elm-croppie.js"
 }

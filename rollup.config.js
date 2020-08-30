@@ -5,11 +5,24 @@ import typescript from "@rollup/plugin-typescript";
 
 export default {
     input: "./src/elm-croppie.ts",
-    output: {
-        file: "./dist/elm-croppie.js",
-        format: "iife",
-        name: "ElmCroppie"
-    },
+    output: [
+        {
+            file: "./dist/elm-croppie.commin.js",
+            format: "cjs",
+            exports: "default",
+            name: "ElmCroppie"
+        },
+        {
+            file: "./dist/elm-croppie.esm.js",
+            format:"esm",
+            name: "ElmCroppie"
+        },
+        {
+            file: "./dist/elm-croppie.js",
+            format: "iife",
+            name: "ElmCroppie"
+        }
+    ],
     plugins: [
         commonjs(),
         nodeResolve(),

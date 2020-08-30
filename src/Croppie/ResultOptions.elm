@@ -11,7 +11,7 @@ module Croppie.ResultOptions exposing
 
 {-| Options of Result
 
-See [Croppie.result](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie#result) for usage.
+See [Croppie.result](/packages/hallelujahdrive/elm-croppie/latest/Croppie#result) for usage.
 
 # Type
 @docs type_, Type

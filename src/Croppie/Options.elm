@@ -15,7 +15,7 @@ module Croppie.Options exposing
 
 {-| Options to inirialize Croppie
 
-See [Croppie.croppie](/packages/hallelujahdrive/elm-croppie/1.0.0/Croppie#croppie) for usage.
+See [Croppie.croppie](/packages/hallelujahdrive/elm-croppie/latest/Croppie#croppie) for usage.
 
 # Boundary
 @docs boundary
